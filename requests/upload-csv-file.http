@@ -1,0 +1,12 @@
+POST http://localhost:3000/api/transfer/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="csv"; filename="shazam.csv"
+
+< ../temp/shazam.csv
+--WebAppBoundary--
+
+###
+
+
