@@ -1,4 +1,4 @@
-import { CacheModule, Module } from '@nestjs/common';
+import { Module } from '@nestjs/common';
 import { TransferService } from './transfer.service';
 import { TransferController } from './transfer.controller';
 import { ProcessSpotifyTrackJob } from '@app/modules/transfer/jobs/process-spotify-track.job';
@@ -9,7 +9,6 @@ import { SpotifyModule } from '@app/modules/spotify/spotify.module';
 @Module({
   imports: [
     SpotifyModule,
-    CacheModule.register(),
     BullModule.registerQueue({
       name: Jobs.ProcessSpotifyTrack,
     }),

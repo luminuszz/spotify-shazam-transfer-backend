@@ -1,5 +1,7 @@
 POST http://localhost:3000/api/transfer/upload
 Content-Type: multipart/form-data; boundary=WebAppBoundary
+Authorization: Bearer AQAbuScOfdfvAtXayrRtReyvJ7GXgyKpnzGOqXMOc03s065irrspXrNKxIG7fL2bARrMZFByzuwBtZwD6lXou5zD63626zqVS1HDBE01_b1PLGrCQa4-aRykZSwx48FR0Me_pFXgepzPlBmkBee13gm8ZSQxZealXtW-Wo4FvmT2TtmH1wsIE1YG8YicdXIxuKZDnDBZ1-GnX0UeCs6iTNoUaSk6V4NcpnW4
+
 
 --WebAppBoundary
 Content-Disposition: form-data; name="csv"; filename="shazam.csv"
